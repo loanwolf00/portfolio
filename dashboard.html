@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>✍️ Write a New Blog Post</h1>
+  <form id="postForm">
+    <input type="text" id="title" placeholder="Title" required><br><br>
+    <textarea id="content" placeholder="Write your blog here..." required></textarea><br><br>
+    <button type="submit">Publish</button>
+  </form>
+
+  <script>
+    document.getElementById("postForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const title = document.getElementById("title").value;
+      const content = document.getElementById("content").value;
+
+      await fetch("http://localhost:5000/posts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title, content })
+      });
+
+      alert("Blog post published!");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafi portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="wrap">
+    <!-- HEADER / TOP BAR -->
+    <header class="frame scan">
+      <div class="brand">
+        <div class="level">Wolf Life</div>
+        <div class="coins">
+          <button class="tab" style="padding:6px 10px; font-family:Inter; letter-spacing:0; font-size:12px;">+</button>
+          <span class="pill">I don't follow paths. I carve Them</span>
+        </div>
+      </div>
+      <div class="meta">
+        <span>Rafi</span>
+        <a class="link" href="#">Running with the time</a>
+        <span>LOCAL TIME: <strong id="clock">00:00:00</strong></span>
+      </div>
+    </header>
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="left frame glow">
+      <div class="profile">
+        <div class="avatar">
+          <img src="images/t bg hero.png" alt="avatar" />
+        </div>
+        <div class="p-fields">
+          <div class="pf"><span class="label">Name</span><span class="value">Rafi Sheikh</span></div>
+          <div class="pf"><span class="label">Occupation</span><span class="value">Business Man</span></div>
+          <div class="pf"><span class="label">Corporation</span><span class="value">Neuro Frog</span></div>
+          <div class="pf"><span class="label">Availability</span><span class="value"><span class="badge">Open for Business</span></span></div>
+          <div class="pf"><span class="label">Social</span><a class="btn" href="https://web.facebook.com/?_rdc=1&_rdr#">Open Connection</a></div>
+        </div>
+      </div>
+      <div class="motto">“I walk alone, not because I’m lost — but because I refuse to follow.”</div>
+    </aside>
+
+    <!-- CENTER / HERO AREA -->
+    <main class="center frame glow scan">
+      <div class="caption">“The lion may be more powerful, but the wolf does not perform in the circus.”</div>
+      <div class="hero">
+        <!-- Replace the image below with your artwork to match the mockup -->
+        <img id="heroImg" src="images/WOLF UP.png" alt="Wolf" />
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR / QUEST + SETTINGS -->
+    <aside class="right">
+      <div class="panel quest frame">
+        <div class="title">BELIEF</div>
+        <h3>أشهد أن لا إله إلا الله وأشهد أن محمدًا رسول الله</h3>
+        <div class="chip">CREATOR:<strong>ALLAH</strong></div>
+        <div class="divider"></div>
+        <div class="q-meta">
+          <div><strong>Goal</strong><br/>
+          KILL THE DEATH BY SHADAH</div>
+          <div class="reward"><span>SITUATION:</span> <span class="badge">Hardly trying to</span> <span class="badge">Practice Islam</span></div>
+        </div>
+      </div>
+
+      <div class="panel frame">
+        <div class="title">Controls</div>
+        <div class="list">
+          <div class="row"><span>Sound Effects</span><div class="toggle" data-key="sfx"><div class="dot"></div></div></div>
+          <div class="row"><span>Roar</span><div class="toggle" data-key="music"><div class="dot"></div></div></div>
+          <div class="row"><span>Visual Settings</span><div class="toggle active" data-key="vfx"><div class="dot"></div></div></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom">
+      <div class="tab active">Beginning<small>Origin story & timeline</small></div>
+      <div class="tab">BLogs<small>Work notes & activity</small></div>
+      <div class="tab">Achievements<small>Badges & ranks</small></div>
+      <div class="tab">Creations<small>Projects & showcases</small></div>
+      <div class="tab">Experience<small></small></div>
+    </nav>
+  </div>
+
+  
+  <script src="script.js"></script>
+  <audio id="bg-music" src="music.mp3/Scary Wolf Howling - QuickSounds.com.mp3" loop></audio>
+
+  
+</body>
+</html>
